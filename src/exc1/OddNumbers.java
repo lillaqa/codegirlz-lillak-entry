@@ -7,7 +7,9 @@ public class OddNumbers {
     public static void main(String[] args){
 
         int nbr1, nbr2, nbr3, nbr4, nbr5;
-        double avarage;
+        int cntEven = 0, cntOdd = 0, sumEven = 0, sumOdd = 0;
+        //double avarage;
+
 
         Scanner input = new Scanner(System.in);
 
@@ -19,38 +21,55 @@ public class OddNumbers {
         nbr5 = input.nextInt();
         input.close();
 
-        if ( nbr1 % 2 == 0 )
-            System.out.println(nbr1 + " number is even");
-        else
-            System.out.println(nbr1 + " number is odd");
+        if (nbr1 % 2 == 0) {
+            cntEven++;
+            sumEven = sumEven + nbr1;
+        } else {
+            cntOdd++;
+            sumOdd = sumOdd + nbr1;
+        }
 
-        if ( nbr2 % 2 == 0 )
-            System.out.println(nbr2 + " number is even");
-        else
-            System.out.println(nbr2 + " number is odd");
+        if (nbr2 % 2 == 0) {
+            cntEven++;
+            sumEven = sumEven + nbr2;
+        } else {
+            cntOdd++;
+            sumOdd = sumOdd + nbr2;
+        }
 
-        if ( nbr3 % 2 == 0 )
-            System.out.println(nbr3 + " number is even");
-        else
-            System.out.println(nbr3 + " number is odd");
+        if (nbr3 % 2 == 0) {
+            cntEven++;
+            sumEven = sumEven + nbr3;
+        } else {
+            cntOdd++;
+            sumOdd = sumOdd + nbr3;
+        }
 
-        if ( nbr4 % 2 == 0 )
-            System.out.println(nbr4 + " number is even");
-        else
-            System.out.println(nbr4 + " number is odd");
+        if (nbr4 % 2 == 0) {
+            cntEven++;
+            sumEven = sumEven + nbr4;
+        } else {
+            cntOdd++;
+            sumOdd = sumOdd + nbr4;
+        }
 
-        if ( nbr5 %  2 == 0 )
-            System.out.println(nbr5 + " number is even");
-        else
-            System.out.println(nbr5 + " number is odd");
+        if (nbr5 % 2 == 0) {
+            cntEven++;
+            sumEven = sumEven + nbr5;
+        } else {
+            cntOdd++;
+            sumOdd = sumOdd + nbr5;
+        }
 
+        int evenAvg,oddAvg;
+        evenAvg = sumEven/cntEven;
+        oddAvg = sumOdd/cntOdd;
 
-
-        avarage = (double) (nbr1+nbr2+nbr3+nbr4+nbr5)/5;
-
-        System.out.println("The avarage number is:" + avarage);
-
+        System.out.println("Average of first N Odd no is "+oddAvg);
 
     }
+
+
+
 
 }
