@@ -5,12 +5,7 @@ import java.util.Scanner;
 public class OddNumbers {
 
     public static void main(String[] args){
-        //double num = 0;
-        //double x = 1;
-        //Scanner NumScanner = new Scanner(System.in);
 
-        //System.out.println("Add your numbers to calculate mean:");
-        String name;
         int nbr1, nbr2, nbr3, nbr4, nbr5;
         double avarage;
 
@@ -29,13 +24,6 @@ public class OddNumbers {
         System.out.println("The avarage number is:" + avarage);
 
 
-
-
-
-
     }
-
-
-
 
 }
