@@ -65,7 +65,7 @@ public class OddNumbers {
         evenAvg = sumEven/cntEven;
         oddAvg = sumOdd/cntOdd;
 
-        System.out.println("Average of first N Odd no is "+oddAvg);
+        System.out.println("The avarage of odd numbers: "+oddAvg);
 
     }
 
