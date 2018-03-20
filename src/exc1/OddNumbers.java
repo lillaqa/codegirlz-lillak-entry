@@ -8,7 +8,6 @@ public class OddNumbers {
 
         int nbr1, nbr2, nbr3, nbr4, nbr5;
         int cntEven = 0, cntOdd = 0, sumEven = 0, sumOdd = 0;
-        //double avarage;
 
 
         Scanner input = new Scanner(System.in);
@@ -69,7 +68,6 @@ public class OddNumbers {
 
     }
 
-
-
+    // How to improve code: 1 allow to print in decimals, 2 allow to add only odd numbers
 
 }
