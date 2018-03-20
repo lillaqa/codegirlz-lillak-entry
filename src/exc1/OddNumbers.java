@@ -68,6 +68,6 @@ public class OddNumbers {
 
     }
 
-    // How to improve code: 1 allow to print in decimals, 2 allow to add only odd numbers
+    // How to improve code: 1 allow to print in decimals, 2 allow to add only odd numbers (most important), 3 allow longer numbers (can crash the code)
 
 }
