@@ -1,8 +1,19 @@
 package exc2;
 
+import java.util.Scanner;
+
 public class EncodeText {
+
     public static void main(String[] args){
 
+        String inputText;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Text to ecode:");
+        inputText = input.nextLine();
+        input.close();
+
+        //inPutText.toLowerCase();
+        System.out.println(inputText.toLowerCase());
 
         //each letter in the text is replaced by a letter some fixed number of positions up in the alphabet
         //the number of this shifting positions equals to the number of occurrences of the first letter in the whole text
