@@ -12,8 +12,10 @@ public class EncodeText {
         inputText = input.nextLine();
         input.close();
 
-        //inPutText.toLowerCase();
-        System.out.println(inputText.toLowerCase());
+        inputText = inputText.toLowerCase();
+        System.out.println("Double check: " +inputText);
+
+
 
         //each letter in the text is replaced by a letter some fixed number of positions up in the alphabet
         //the number of this shifting positions equals to the number of occurrences of the first letter in the whole text
