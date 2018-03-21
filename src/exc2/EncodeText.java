@@ -21,9 +21,19 @@ public class EncodeText {
         long countFirst = inputText.chars().filter(ch -> ch == firstLetter).count();
         System.out.println("The frequency of the first letter: " + countFirst);
 
+        int shiftValue = (int) countFirst;
 
-        //inputText = inputText.replaceAll("b","c");
-        //System.out.println("Double check: " +inputText);
+        String abc = "zyxwvutsrqponmlkjihgfedcba";
+        String bar = "";
+
+        for (char c : abc.toCharArray()) {
+            bar += Character.toString((char) (((c - 'a' + shiftValue) % 26) + 'a'));
+        }
+
+        System.out.println(bar);
+
+        //System.out.println(inputText.replace(alphabet, (char) (((alphabet - firstLetter + countFirst) %  aplhabetSize ) + firstAbcLetter)));
+
 
 
         //each letter in the text is replaced by a letter some fixed number of positions up in the alphabet
