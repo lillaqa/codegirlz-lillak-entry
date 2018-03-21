@@ -24,15 +24,12 @@ public class EncodeText {
         int shiftValue = (int) countFirst;
 
         String abc = "zyxwvutsrqponmlkjihgfedcba";
-        String bar = "";
 
-        for (char c : abc.toCharArray()) {
-            bar += Character.toString((char) (((c - 'a' + shiftValue) % 26) + 'a'));
-        }
+        /*for (char c : abc.toCharArray()) {
+            inputText += Character.toString((char) (((c - 'z' + shiftValue) % 26) + 'z'));
+        }*/
 
-        System.out.println(bar);
-
-        //System.out.println(inputText.replace(alphabet, (char) (((alphabet - firstLetter + countFirst) %  aplhabetSize ) + firstAbcLetter)));
+        System.out.println(inputText);
 
 
 
