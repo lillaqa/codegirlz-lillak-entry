@@ -18,6 +18,8 @@ public class EncodeText {
 
         firstLetter = inputText.charAt(0);
         System.out.println("double check first char: " + firstLetter);
+        long countFirst = inputText.chars().filter(ch -> ch == firstLetter).count();
+        System.out.println("The frequency of the first letter: " + countFirst);
 
 
         //inputText = inputText.replaceAll("b","c");
