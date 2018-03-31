@@ -1,6 +1,7 @@
 package exc2;
 
 import java.util.Scanner;
+import java.lang.String;
 
 public class EncodeText {
 
@@ -24,11 +25,15 @@ public class EncodeText {
         int shiftValue = (int) countFirst;
 
         String abc = "zyxwvutsrqponmlkjihgfedcba";
+        //char oldChar;
+        //char newChar;
+
 
         /*for (char c : abc.toCharArray()) {
             inputText += Character.toString((char) (((c - 'z' + shiftValue) % 26) + 'z'));
         }*/
 
+        //inputText.replaceAll(oldChar, newChar);
         System.out.println(inputText);
 
 
